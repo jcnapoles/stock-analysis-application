@@ -1,0 +1,27 @@
+{
+  "stockAnalysisApplicationApp": {
+    "analysis": {
+      "home": {
+        "title": "Analyses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Analysis",
+        "createOrEditLabel": "Create or edit a Analysis",
+        "notFound": "No Analyses found"
+      },
+      "created": "A new Analysis is created with identifier {{ param }}",
+      "updated": "A Analysis is updated with identifier {{ param }}",
+      "deleted": "A Analysis is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Analysis {{ id }}?"
+      },
+      "detail": {
+        "title": "Analysis"
+      },
+      "id": "ID",
+      "date": "Date",
+      "description": "Description",
+      "indicator": "Indicator",
+      "stock": "Stock"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "stockAnalysisApplicationApp": {
+    "indicator": {
+      "home": {
+        "title": "Indicators",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Indicator",
+        "createOrEditLabel": "Create or edit a Indicator",
+        "notFound": "No Indicators found"
+      },
+      "created": "A new Indicator is created with identifier {{ param }}",
+      "updated": "A Indicator is updated with identifier {{ param }}",
+      "deleted": "A Indicator is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Indicator {{ id }}?"
+      },
+      "detail": {
+        "title": "Indicator"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "analysis": "Analysis"
+    }
+  }
+}

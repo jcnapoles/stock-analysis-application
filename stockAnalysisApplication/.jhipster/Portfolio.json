@@ -1,0 +1,33 @@
+{
+  "applications": ["stockAnalysisApplication", "PortfolioManagement"],
+  "changelogDate": "20230408174356",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "portfolio",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Portfolio",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "position",
+      "otherEntityRelationshipName": "portfolio",
+      "relationshipName": "position",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
