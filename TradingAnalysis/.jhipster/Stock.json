@@ -1,0 +1,60 @@
+{
+  "applications": ["stockAnalysisApplication", "TradingAnalysis"],
+  "changelogDate": "20230408174356",
+  "clientRootFolder": "TradingAnalysis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stock",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sector",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fundation",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icnome",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "expenses",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "capitalization",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "employees",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "TradingAnalysis",
+  "name": "Stock",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "analysis",
+      "otherEntityRelationshipName": "stock",
+      "relationshipName": "analysis",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

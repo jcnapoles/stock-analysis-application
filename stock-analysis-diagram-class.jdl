@@ -1,0 +1,74 @@
+
+application {
+  config {
+    baseName stockAnalysisApplication,
+    applicationType gateway,
+    packageName com.invertimostuyyo.stockanalysis,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName TradingAnalysis,
+    applicationType microservice,
+    packageName com.invertimostuyyo,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Stock, Analysis, Indicator
+}
+
+application {
+  config {
+    baseName PortfolioManagement,
+    applicationType microservice,
+    packageName com.invertimostuyyo,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Portfolio, Position
+}
+
+entity Stock {
+	name String required,
+    sector String required,
+    fundation LocalDate,
+    description String,
+    icnome Double,
+    expenses Double,
+    capitalization Double,
+    employees Integer
+}
+
+entity Analysis {
+	date LocalDate required,
+    description String
+}
+
+entity Indicator {
+	name String required,
+    description String
+}
+
+entity Portfolio {
+	name String required,
+    description String   
+}
+
+entity Position {
+	amount Double required,
+    price Double required,
+}
+
+relationship OneToMany {
+  Stock to Analysis{stock}
+  Analysis to Indicator{analysis}
+  Portfolio to Position{portfolio}
+  
+}
+
+    
