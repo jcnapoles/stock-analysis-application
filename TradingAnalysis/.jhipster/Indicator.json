@@ -1,0 +1,35 @@
+{
+  "applications": ["stockAnalysisApplication", "TradingAnalysis"],
+  "changelogDate": "20230408174256",
+  "clientRootFolder": "TradingAnalysis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "indicator",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "TradingAnalysis",
+  "name": "Indicator",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "analysis",
+      "otherEntityRelationshipName": "indicator",
+      "relationshipName": "analysis",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
